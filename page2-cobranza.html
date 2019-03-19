@@ -1,0 +1,215 @@
+<div class="pages">
+  <div data-page="shop52" class="page no-toolbar no-navbar">
+    <div class="page-content">
+
+      <div class="navbarpages">
+        <div class="navbar_left">
+          <a href="index.html">
+            <img src="images/icons/blue/menu.png" alt="" title="" />
+          </a>
+        </div>
+        <div class="navbar_center">
+          <h2>
+            <a href="index.html">CRONOS</a>
+          </h2>
+        </div>
+
+      </div>
+
+      <div id="pages_maincontent">
+
+        <h2 class="page_title">REGISTRO COBRANZA - 2</h2>
+
+        <div class="page_content">
+
+          <ul class="features_list_detailed">
+
+            <div class="feat_small_details">
+              <h4>
+                <a href="">Amortizaciòn</a>
+              </h4>
+              <p></p>
+              <div class="contactform">
+                <form id="cobdatoscliente" method="post" action="#">
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Doc: </div>
+                      <div class="col-80">
+                        <input type="text" name="cobdocumento2" id="cobdocumento2" class="form_input" placeholder="Número" readonly />
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Deuda: </div>
+                      <div class="col-80">
+                        <input type="text" name="cobdeuda2" id="cobdeuda2" class="form_input" placeholder="0.00" readonly />
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Serie P. Cobranza: </div>
+                      <div class="col-80">
+                        <input type="number" name="seriecobranza" id="seriecobranza" value="" class="form_input" readonly/>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Nº P. Cobranza: </div>
+                      <div class="col-80">
+                        <input type="number" name="numcobranza" id="numcobranza" value="" class="form_input" readonly />
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-25">Forma Pago: </div>
+                      <div class="col-75">
+                        <select style="
+                                    -moz-border-radius: 5px;
+                                    -webkit-border-radius: 5px;
+                                    border-radius: 5px;
+                                    padding: 5px;width: 100%;">
+                          <option value="" selected="true" disabled="disabled">Seleccione...</option>
+                          <option>DEPÓSITO SOLES</option>
+                          <option selected>EFECTIVO SOLES</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <p></p>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-25">Cuenta: </div>
+                      <div class="col-75">
+                        <select style="
+                                      -moz-border-radius: 5px;
+                                      -webkit-border-radius: 5px;
+                                      border-radius: 5px;
+                                      padding: 5px;width: 100%;" id="cuenta" name="cuenta" required>
+      
+                        
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                  <p></p>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Monto: </div>
+                      <div class="col-80">
+                        <input type="tel" name="montocobranza" id="montocobranza"  onkeyup="calcularSaldo();" class="form_input" placeholder="0.00" />
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Saldo: </div>
+                      <div class="col-80">
+                        <input readonly type="text" name="saldocobranza" id="saldocobranza" class="form_input" placeholder="0.00" readonly/>
+
+                      </div>
+                    </div>
+                  </div>
+
+                       <div class="form_row">
+                    <div class="row">
+                      <div class="col-20">Vuelto: </div>
+                      <div class="col-80">
+                        <input  readonly type="text" name="vueltocobranza" id="vueltocobranza" class="form_input" placeholder="0.00" readonly/>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-25">Documento: </div>
+                      <div class="col-75">
+                        <select style="
+                                            -moz-border-radius: 5px;
+                                            -webkit-border-radius: 5px;
+                                            border-radius: 5px;
+                                            padding: 5px;width: 100%;" id="iddoccomp" name="iddoccomp">
+                          
+                          <option value="10" selected>RECIBO DE COBRANZA</option>
+
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                  <p></p>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20"></div>
+                      <div class="col-80">
+                        <input type="hidden" name="numdocumento" id="numdocumento" value="" class="form_input" />
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-20"></div>
+                      <div class="col-80">
+                        <input type="hidden" name="cobdetalle" id="cobdetalle" value="" class="form_input" />
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="row">
+                      <div class="col-25"></div>
+                      <div class="col-75">
+                        <input type="hidden" style="               
+                        border-radius: 1px;
+                        padding: 5px;width: 100%;"  id="fechacobro" name="fechacobro" onchange="calcularFecha();">
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+
+                  <a href="#" id="confirmarCobranza" class="button_full">COBRAR</a>              
+
+                </form>
+
+              </div>
+
+
+            </div>
+
+            <div id="opcionesCobranza">
+          
+            </div>
+          
+
+
+          </ul>
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>

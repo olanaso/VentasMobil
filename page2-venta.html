@@ -1,0 +1,159 @@
+<div class="pages">
+  <div data-page="shop46" class="page no-toolbar no-navbar">
+    <div class="page-content">
+
+      <div class="navbarpages">
+        <div class="navbar_left">
+          <a href="index.html">
+            <img src="images/icons/blue/menu.png" alt="" title="" />
+          </a>
+        </div>
+        <div class="navbar_center">
+          <h2>
+            <a href="index.html">CRONOS</a>
+          </h2>
+        </div>
+
+      </div>
+
+      <div id="pages_maincontent">
+
+        <h2 class="page_title">REGISTRO VENTA -
+          <small>PASO 2
+            <small>
+        </h2>
+
+        <div class="page_content">
+
+          <ul class="features_list_detailed">
+
+            <div class="feat_small_details">
+              <h4>
+                <a href="">Buscar Cliente</a>
+              </h4>
+              <li>
+
+                <div class="row">
+                  <div class="form_row">
+                    <div class="col-70">
+                      <div class="col-70">
+                        <select style="
+                              -moz-border-radius: 5px;
+                              -webkit-border-radius: 5px;
+                              border-radius: 5px;
+                              padding: 5px;width: 100%;" id="tipodoc" name="tipodoc" onchange="cambiaTeclado(this.value)" required>
+                          <option value="" disabled="disabled">Seleccione...</option>
+                          <option value="ruc">DNI - RUC</option>
+                          <option value="nombre" selected="true">APELLIDOS - NOMBRES</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p></p>
+                <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                  <div class="searchbar-input">
+                    <input type="search" placeholder="Buscar" id="busquedacliente">
+                    <a href="#" class="searchbar-clear"></a>
+                  </div>
+                  <a href="#" id='cancelarbusquedacliente' class="searchbar-cancel">Cancelar</a>
+                </form>
+
+                <div id="clienteencontrado">
+                </div>
+
+                <!-- busqueda mediante boton
+              <div class="contactform">
+                  <form class="cmxform" id="buscarCliente" method="post" action="#">
+                    <div class="form_row">
+                      <div class="form_row_icon">
+                        <input type="button" name="btn_buscarCliente" class="form_submit" id="btn_buscarCliente" style=" background: url('images/icons/blue/search.png');
+                                            border: 1px solid hsl(135, 100%, 42%);                                       
+                                            width: 30px;" />
+                      </div>
+                      <input type="text" name="docbuscar" id="docbuscar" class="form_input required" placeholder="Digite" />
+                    </div>
+                    <div class="form_row">
+                      <h8>
+                        <small class="dnimensaje"></small>
+                      </h8>
+                    </div>
+
+                  </form>
+
+                </div>-->
+
+
+                <div class="form_row">
+                  <h8>
+                    <small class="dnimensaje"></small>
+                  </h8>
+                </div>
+
+              </li>
+            </div>
+
+            <li>
+              <div class="feat_small_details">
+                <h4>
+                  <a href="">Datos del Cliente</a>
+                </h4>
+                <div class="contactform">
+                  <form id="ContactForm" method="post" action="#">
+                    <div class="form_row">
+                      <div class="form_row_icon">
+                        <img src="images/icons/blue/user.png" alt="" title="" />
+                      </div>
+                      <input type="hidden" name="idcliente" id="idcliente" />
+                      <input type="hidden" name="iddireccion" id="iddireccion" />
+                      <input type="hidden" name="codigocliente" id="codigocliente" />
+                      <input type="hidden" name="idtipocliente" id="idtipocliente" />
+                      <input type="hidden" name="numerodoc" id="numerodoc" />
+                      <input type="hidden" name="tipobusqueda" id="tipobusqueda" />
+                      <input type="hidden" name="flagpermitido" id="flagpermitido" />
+                      <input type="text" name="nombre" id="nombrecliente" value="" class="form_input required" placeholder="" readonly/>
+                    </div>
+                    <div class="form_row">
+                      <div class="form_row_icon">
+                        <img src="images/icons/blue/briefcase.png" alt="" title="" />
+                      </div>
+                      <input type="text" name="documentocliente" id="documentocliente" value="" class="form_input required" placeholder="Direccion"
+                        readonly/>
+                    </div>
+                    <div class="form_row">
+                      <div class="form_row_icon">
+                        <img src="images/icons/blue/briefcase.png" alt="" title="" />
+                      </div>
+                      <input type="text" name="direccion" id="direccioncliente" value="" class="form_input required" placeholder="Direccion" readonly/>
+                    </div>
+                    <div class="form_row">
+                      <div class="form_row_icon">
+                        <img src="images/icons/blue/tabs.png" alt="" title="" />
+                      </div>
+                      <input type="text" name="tipocliente" id="tipocliente" value="" class="form_input required" placeholder="Ruc" readonly/>
+                    </div>
+
+                  </form>
+                </div>
+
+              </div>
+
+            </li>
+            <div class="shop_pagination">
+              <a href="page1-venta.html" class="prev_shop">Anterior</a>
+              <span class="shop_pagenr">2/3</span>
+              <a href="#" class="next_shop" id="datosventa2">Siguiente</a>
+            </div>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
